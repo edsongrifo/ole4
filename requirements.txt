@@ -1,2 +1,3 @@
 selenium
 gunicorn
+webdriver_manager
