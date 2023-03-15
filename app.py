@@ -12,8 +12,9 @@ from selenium.webdriver.chrome.service import Service
 
 servico = Service(ChromeDriverManager().install())
 
-driver = webdriver.Chrome(executable_path="/opt/render/project/.render/chrome/opt/google/chrome/google-chrome/chromedriver",
-                                   desired_capabilities=capabilities,options=chrome_options)
+
+
+driver = webdriver.Chrome(executable_path="/opt/render/project/.render/chrome/opt/google/chrome/google-chrome/chromedriver")
 
 navegador = webdriver.Chrome(service=servico)
 
