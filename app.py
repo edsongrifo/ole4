@@ -14,7 +14,8 @@ servico = Service(ChromeDriverManager().install())
 
 
 
-driver = webdriver.Chrome(executable_path="/opt/render/project/.render/chrome/opt/google/chrome/google-chrome/chromedriver")
+driver = webdriver.Chrome(executable_path="/opt/render/project/.render/chrome/opt/google/chrome/google-chrome/chromedriver",
+                                   desired_capabilities=capabilities,options=chrome_options)
 
 navegador = webdriver.Chrome(service=servico)
 
